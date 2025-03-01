@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+        .navbar li {
+            position: relative;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+        }
+        .navbar li:hover {
+            background-color: #555;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            min-width: 150px;
+        }
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+        }
+        .dropdown a:hover {
+            background-color: #0b6641;
+        }
+        .has-dropdown::after {
+            content: " \25BE";
+            font-size: 14px;
+        }
+        .has-dropdown:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li class="has-dropdown">Contact
+                <div class="dropdown">
+                    <a href="#">E-MAIL</a>
+                    <a href="#">MOBILE</a>
+                    <a href="#">FAX</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

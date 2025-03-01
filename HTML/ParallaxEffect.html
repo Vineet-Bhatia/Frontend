@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Effect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+        .parallax {
+            height: 100vh;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXo3xlrCq-EDrU-GDPowfLiKDeAUrGHSgCew&s');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .content {
+            padding: 50px;
+            background-color: white;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .parallax-layer {
+            height: 50vh;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaKl5X-C8gckDzSK6xX2IC2wGkGdDoHbRslg&s');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax">Welcome to the Parallax Effect</div>
+    <div class="content">
+        <p>This is an example of a parallax scrolling effect. The background moves at a different speed than the content.</p>
+    </div>
+    <div class="parallax-layer">Another Layer of Parallax</div>
+    <div class="content">
+        <p>Adding multiple layers enhances the effect and creates a visually appealing scrolling experience.</p>
+    </div>
+</body>
+</html>
